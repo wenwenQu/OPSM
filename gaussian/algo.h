@@ -133,7 +133,6 @@ void appendRng(DPMatrix &out, DPMatrix &in, Range& rng)//rng=t(i+1)
 		out.pr[i] = new Polynomial<double>* [out.seqLen];
 
 		//reuse pr[pos][j] of "in"
-		int pos = -1;
 		if(out.splits[i] == in.splits[pos + 1])
 			pos++;
 		for (int j = 0; j < out.seqLen-1; j++){
